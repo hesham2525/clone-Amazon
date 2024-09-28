@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        #prevButton {
+            left: 10px;
+        }
+
+        #nextButton {
+            right: 10px;
+        }
+
+        .slider img {
+            width: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slider img.hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="amazonLogo">
+            <a href="#">
+                <img src="/images/amazon_logo.png" width="100px" alt="">
+            </a>
+        </div>
+        <div class="nav-country">
+            <img src="/images/location_icon.png" height="20" alt="">
+            <div class="area">
+                <p class="p1">Deliver to</p>
+                <p class="p2">Egypt</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="all-search">
+                <p>All</p>
+                <img src="/images/dropdown_icon.png" height="7" alt="">
+            </div>
+            <input class="search-bar-input" type="search" placeholder="search Amazon">
+            <img class="search-bar-img" src="/images/search_icon.png" alt="">
+        </div>
+        <div class="country-flag">
+            <img src="/images/us_flag.png" height="25" alt="">
+            <p>US</p>
+            <img src="/images/dropdown_icon.png" height="8" alt="">
+        </div>
+        <div class="nav-text">
+            <a href="signUp.html">
+                <p>Hello, sign in</p>
+                <h4>Account & Lists <img src="/images/dropdown_icon.png" height="7" alt=""></h4>
+            </a>
+        </div>
+        <div class="orders">
+            <a href="">
+                <p>Return</p>
+                <h4>& Orders</h4>
+            </a>
+        </div>
+        <div class="cart">
+            <a href="">
+                <img src="/images/cart_icon.png" height="35" alt="">
+            </a>
+            <p>cart</p>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <button class="slider-button" id="prevButton">&lt;</button>
+        <img id="img" src="/images/header1.jpg" alt="">
+        <button class="slider-button" id="nextButton">&gt;</button>
+    </div>
+
+    <script>
+        let img1 = document.getElementById("img");
+        let i = 0;
+        let arrimge = [
+            "/images/header1.jpg",
+            "/images/header2.jpg",
+            "/images/header3.jpg",
+            "/images/header4.jpg",
+            "/images/header5.jpg",
+            "/images/header6.jpg"
+        ];
+
+        // Preload images
+        arrimge.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        function next() {
+            i = (i + 1) % arrimge.length;
+            img1.classList.add('hidden');
+            setTimeout(() => {
+                img1.setAttribute("src", arrimge[i]);
+                img1.classList.remove('hidden');
+            }, 500); // Match the CSS transition duration
+        }
+
+        function previous() {
+            i = (i - 1 + arrimge.length) % arrimge.length;
+            img1.classList.add('hidden');
+            setTimeout(() => {
+                img1.setAttribute("src", arrimge[i]);
+                img1.classList.remove('hidden');
+            }, 500); // Match the CSS transition duration
+        }
+
+        document.getElementById("nextButton").addEventListener("click", next);
+        document.getElementById("prevButton").addEventListener("click", previous);
+    </script>
+</body>
+</html>

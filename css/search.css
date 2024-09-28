@@ -1,0 +1,42 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-around; 
+}
+
+.productDiv {
+    flex: 0 1 calc(25% - 20px); 
+    box-sizing: border-box; 
+    padding: 10px;
+    border: 1px solid #ddd; 
+    background-color: #f9f9f9; 
+    text-align: center;
+}
+
+.imgCategory {
+    cursor: pointer;
+    max-width: 100%; 
+    height: auto; 
+}
+.imgCategory:hover {
+    transform: scale(1.05);
+    transition: 2s;
+}
+
+.nameCategory {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.descCategory {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.priseCategory {
+    font-size: 1.2em;
+    color: #ff0101;
+    margin: 10px 0;
+}

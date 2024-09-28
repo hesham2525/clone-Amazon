@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(66, 66, 241);
+}
+.mainContainar{
+    display: grid;
+    justify-content: center;
+    margin: 3%;
+}
+.logo{
+display: flex;
+justify-content: center;
+margin: 2%;
+}
+.signUpDiv{
+    width: 350px;
+    height: 450px;
+    border: 1px solid gray;
+    border-radius: 5%;
+
+}
+.p1{
+    font-size: 25px;
+}
+.p1,.p2{
+    margin: 4%;
+}
+.inpt1{
+    margin-left: 4%;
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    margin-top: 30px;
+    width: 90%;
+    height: 30px;
+    background-color: rgb(255, 238, 6);
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+}
+.btn1:hover{
+    background-color: rgb(245, 229, 7);
+    cursor: pointer;
+}
+.p3{
+    font-size: 13px;
+    margin: 5%;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="amazonLogo">
+            <a href="/html/main.html">
+                <img src="/images/amazon_logo.png"  width="130px" alt="">
+            </a>
+        </div>      
+        <div class="nav-country">
+        
+            <img src="/images/location_icon.png" height="20" alt="">
+           
+            <div class="area">
+                <p  class="p1">Deliver to</p>
+                <p class="p2">Egypt</p>
+            </div>
+        </div>
+    
+        <div class=" nav-search">
+          <div class="all-search">
+            <p >All</p>
+            <img src="/images/dropdown_icon.png" height="7" alt="">
+          </div>
+            <input class="search-bar-input" type="search" placeholder="search Amazon" >
+            
+            <img  class="search-bar-img" src="/images/search_icon.png"  alt="">
+       
+        </div>
+        <div class="country-flag">
+            <img src="/images/assets/phalitain.png" height="13 " alt="">
+            <p>PS</p>
+            <img src="/images/dropdown_icon.png" height="8" alt="">
+        </div>
+        <div  class="nav-text" >
+            <a href="signUp.html">
+                <p>Hello, sign in</p> 
+            <h4>Account & Lists <img src="/images/dropdown_icon.png" height="7" alt=""></h4> 
+    
+            </a>
+        </div>
+        <div class="orers">
+            <a href="">
+                <p>
+                    Return
+                </p> 
+                <h4>& Orders</h4>
+            </a>
+          
+        </div>
+        <!-- class="bi bi-cart2" -->
+        <a href="cart.html">
+            <div class="cart">
+                <!-- <img src="/images/catr-icon-new.jpg" height="40" alt=""> -->
+                <i class="fa-solid fa-cart-shopping icon-1 "></i>
+                <!-- <ion-icon class="bi bi-cart2" name="cart-outline"></ion-icon> -->
+                <!-- <i class="fa-regular fa-cart-shopping"></i> -->
+              <!-- <i class="bi bi-cart2"></i> -->
+              <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+          </a>
+    
+    </nav>
+    
+    <div id="search-results-container" class="products-container">
+    </div>
+    <footer>
+        <div class="back-to-top">
+            <a href="#">Back to top</a>
+        </div>
+        <div class="footer-container">
+            
+            <div class="footer-column">
+                <h3>Get to know us</h3>
+                <ul>
+                    <li>Careers</li>
+                    <li>Blog</li>
+                    <li>About Amazon</li>
+                    <li>Investor Relations</li>
+                    <li>Amazon Devices</li>
+                    <li>Amazon Science</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li>Sell Products on Amazon</li>
+                    <li>Sell on Amazon Business</li>
+                    <li>Sell apps on Amazon</li>
+                    <li>Become an Affiliate</li>
+                    <li>Advertise your Products</li>
+                    <li>Self-publish with Us</li>
+                    <li>Host an Amazon Hub</li>
+                    <li>See More Make Money With Us</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Amazon Payment Products</h3>
+                <ul>
+                    <li>Amazon Business Card</li>
+                    <li>Shop with Points</li>
+                    <li>Reload Your Balance</li>
+                    <li>Amazon Currency Converter</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li>Amazon and COVID-19</li>
+                    <li>Your Account</li>
+                    <li>Your Orders</li>
+                    <li>Shipping Rates & Policies</li>
+                    <li>Returns & Replacements</li>
+                    <li>Manage Your Content and Devices</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+           
+            
+        </div>
+        <hr class="hr"> 
+        <div class="divbtn">
+            <div >
+                <img src="/images/amazon_logo.png" alt="" id="icon">
+                </div>
+                <div >
+                    <button class="btn1">
+                        <div>
+                            <i class="fa-solid fa-earth-americas"></i>
+    
+                        </div>
+                        <div>
+                            English
+    
+                        </div>
+                    </button>
+                </div>
+                <div>
+                    <button class="btn2">
+                        $ USD - U.S. Dollar
+                    </button>
+                </div> <div>
+                    <button class="btn1">
+                        <h2>
+                            <img src="/images/assets/phalitain.png" height="13" alt="">
+                        </h2>
+                        Palestine
+                    </button>
+                </div>
+        </div>
+            
+    </footer>
+    <script src="/js/data.js"></script>
+    <script src="/js/searchResults.js"></script>
+</body>
+</html>
